@@ -1,0 +1,105 @@
+<template>
+  <v-autocomplete
+      v-model="valueId"
+      @update:model-value="handleChoose"
+      :label="label"
+      :placeholder="placeholder"
+      prepend-inner-icon="mdi-sitemap-outline"
+      append-inner-icon="mdi-magnify"
+      :hide-details="hideDetails"
+      :density="density"
+      :variant="variant"
+      :rules="rules"
+      :loading="searching"
+      :items="items"
+      clearable
+  ></v-autocomplete>
+</template>
+<script setup>
+import {compact, includes} from "lodash";
+import {computed, defineEmits, ref, toRaw, watch} from "vue";
+import API from '@/api';
+
+const searching = ref(false);
+const items = ref([])
+const emit = defineEmits(['update:value', 'change']);
+const props = defineProps({
+  /**当前双向数据绑定的值 */
+  value: {
+    type: [String, Number],
+    default: ''
+  },
+  code: {
+    type: String,
+    default: ''
+  },
+  /** 年份 */
+  rules: {
+    type: Array,
+    default: []
+  },
+  hideDetails: {
+    type: Boolean,
+    default: true
+  },
+  disabled: {
+    type: Boolean,
+    default: false
+  },
+  density: {
+    type: String,
+    default: 'default'
+  },
+  variant: {
+    type: String,
+    default: 'underlined'
+  },
+  label: {
+    type: String,
+    default: 'Site'
+  },
+  placeholder: {
+    type: String,
+    default: 'Please select'
+  }
+})
+
+const valueId = computed({
+  get: () => {
+    return props.value;
+  },
+  set: (val) => {
+    emit('update:value', val)
+  }
+});
+
+const getData = async (code) => {
+  try {
+    const { data } = await API.get(`/site/item/get_site_by_site_type/${code}`)
+    items.value = compact(data || []);
+  } finally {
+    searching.value = false;
+  }
+}
+
+const handleChoose = (item) => {
+  emit("change", item)
+}
+
+watch(
+    () => props.code,
+    (value) => {
+      if (value) {
+        getData(value);
+      } else {
+        items.value = [];
+        valueId.value = ''; // 清空 valueId
+      }
+    },
+    { immediate: true }
+);
+
+</script>
+<style scoped>
+
+</style>

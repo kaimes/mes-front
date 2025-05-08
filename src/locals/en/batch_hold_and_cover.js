@@ -1,0 +1,26 @@
+export default {
+    table: {
+        code: "Code",
+        runout_code: "Runout Code",
+        order_number: "Order Number",
+        rolling_code: "Rolling Code",
+        cast_code: "Cast Code",
+        advice: "Advice",
+        hold_status: "Hold Status",
+        spec_code: "Spec Code",
+        t_result: "T-Result",
+        t_cover: "T-Cover",
+        t_cover_by: "T-Cover By",
+        c_result: "C-Result",
+        c_cover_by: "C-Cover By",
+        cover_status: "Cover Status",
+        cover_msg: "Cover Msg",
+        cover_date: "Cover Date",
+    },
+    button: {
+        hold: "Hold",
+        unhold: "UnHold",
+        cover: "Cover",
+        uncover: "UnCover",
+    },
+};

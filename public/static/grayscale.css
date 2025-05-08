@@ -1,0 +1,4 @@
+.leaflet-tile,
+.leaflet-tile-loaded{
+  filter: grayscale(100%);
+}

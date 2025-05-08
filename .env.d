@@ -1,0 +1,9 @@
+NODE_ENV='development'
+NODE_OPTIONS='--max-http-header-size=100000'
+VUE_APP_BASE_ENV='/d'
+VUE_APP_BASE_APPHOST="localhost:8881"
+VUE_APP_BASE_APPHOST_HTTP="http://127.0.0.1:8000"
+VUE_APP_PORT="8881"
+VUE_APP_REGION="Singapore"
+
+VUE_APP_APPNAME='KandboxDispatch'

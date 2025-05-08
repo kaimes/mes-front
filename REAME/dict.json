@@ -1,0 +1,1473 @@
+{
+  "semi_type": [
+    {
+      "title": "Slab",
+      "value": "Slab"
+    },
+    {
+      "title": "BLM",
+      "value": "BLM"
+    },
+    {
+      "title": "Bloom",
+      "value": "Bloom"
+    }
+  ],
+  "semi_status": [
+    {
+      "title": "Scrapped",
+      "value": "scrapped"
+    },
+    {
+      "title": "Charged",
+      "value": "charged"
+    },
+    {
+      "title": "Created",
+      "value": "created"
+    },
+    {
+      "title": "Processed",
+      "value": "processed"
+    }
+  ],
+  "spria_loc": [
+    {
+      "title": "F-Flange",
+      "value": "F"
+    },
+    {
+      "title": "W-Web",
+      "value": "W"
+    },
+    {
+      "title": "Thickest",
+      "value": "T"
+    }
+  ],
+  "spec_unit": [
+    {
+      "title": "Imperial",
+      "value": "I",
+      "desc": "Imperical also means ASTM standard"
+    },
+    {
+      "title": "Metrics",
+      "value": "M",
+      "desc": "Metrics also means ES standard"
+    }
+  ],
+  "stock_test_flag": [
+    {
+      "title": "Y",
+      "value": "Y"
+    },
+    {
+      "title": "N",
+      "value": "N"
+    }
+  ],
+  "test_type": [
+    {
+      "value": "1",
+      "title": "1 - ASTM tensile, between thickest and thinnest."
+    },
+    {
+      "title": "2 - Tensile, Every 5 tonnes.",
+      "value": "2"
+    },
+    {
+      "title": "3 - BSEN tensile, Every N (40,60,etc) tonnes.",
+      "value": "3"
+    },
+    {
+      "title": "4 - Type 3 plus BSEN Charpy.",
+      "value": "4"
+    },
+    {
+      "title": "5 - Type 1 plus ASTM Charpy.",
+      "value": "5"
+    }
+  ],
+  "test_subtype": [
+    {
+      "title": "A - 40 tonnes in Tensile, any thinner in Charpy.",
+      "value": "A"
+    },
+    {
+      "title": "B - 40 tonnes up to 100 kg/m, 60 tonnes above. ",
+      "value": "B"
+    },
+    {
+      "title": "C - 40 tonnes regardless of Flange Thickness.",
+      "value": "C"
+    },
+    {
+      "title": "D - 40 tonnes, tensile restricted -5 mm.",
+      "value": "D"
+    },
+    {
+      "title": "Y - Tesile taken from Web in Type 1 and 5.",
+      "value": "Y"
+    },
+    {
+      "title": "Z - Tesile taken from Flange in Type 1 and 5",
+      "value": "Z"
+    }
+  ],
+  "main_element_type": [
+    {
+      "title": "Main",
+      "value": "Main"
+    },
+    {
+      "title": "ISS",
+      "value": "ISS"
+    },
+    {
+      "title": "ISB",
+      "value": "ISB"
+    },
+    {
+      "title": "ITB",
+      "value": "ITB"
+    },
+    {
+      "title": "ITS",
+      "value": "ITS"
+    }
+  ],
+  "quality_element_type": [
+    {
+      "title": "Main",
+      "value": "Main"
+    },
+    {
+      "title": "ISS",
+      "value": "ISS"
+    },
+    {
+      "title": "ISB",
+      "value": "ISB"
+    }
+
+  ],
+  "spscond_code": [
+    {
+      "title": "AR-AS ROLLED",
+      "value": "AR",
+      "text": "AS ROLLED"
+    },
+    {
+      "title": "TCR-TEMPERATURE CONTROLLED ROLLED",
+      "value": "TCR",
+      "text": "TEMPERATURE CONTROLLED ROLLED"
+    },
+    {
+      "title": "TMR-THERMOMECHANICALLY ROLLED",
+      "value": "TMR",
+      "text": "THERMOMECHANICALLY ROLLED"
+    },
+    {
+      "title": "TMCR-THERMOMECHANICALLY CONTROL ROLLED",
+      "value": "TMCR",
+      "text": "THERMOMECHANICALLY CONTROL ROLLED"
+    },
+    {
+      "title": "AC-ACCELERATED COOLED",
+      "value": "AC",
+      "text": "ACCELERATED COOLED"
+    },
+    {
+      "title": "CR-CONTROL ROLLED",
+      "value": "CR",
+      "text": "CONTROL ROLLED"
+    },
+    {
+      "title": "NR-NORMALISING ROLLING",
+      "value": "NR",
+      "text": "NORMALISING ROLLING"
+    }
+  ],
+  "deoxidation_loc": [
+    {
+      "title": "B-BALANCED.",
+      "value": "B"
+    },
+    {
+      "title": "BA-ALUMINIUM BALANCED",
+      "value": "BA"
+    },
+    {
+      "title": "BN-BALANCED NIOBIUM TREATED",
+      "value": "BN"
+    },
+    {
+      "title": "K-SILICON KILLED",
+      "value": "K"
+    },
+    {
+      "title": "KA-SIL KILLED ALUMINIUM GRAIN REF",
+      "value": "KA"
+    },
+    {
+      "title": "KF-SILICON KILLED-FINE GRAINED",
+      "value": "KF"
+    },
+    {
+      "title": "KN-SI KILLED-NIOB,AL FINE GRAINED",
+      "value": "KN"
+    },
+    {
+      "title": "KV-SI-KILLED-VANADIUM-TREATED",
+      "value": "KV"
+    },
+    {
+      "title": "R-RIMMED",
+      "value": "R"
+    },
+    {
+      "title": "RA-RIMMED ALUMINIUM STABILISED",
+      "value": "RA"
+    },
+    {
+      "title": "RB-RIMMED OR BALANCED",
+      "value": "RB"
+    },
+    {
+      "title": "RN-RIMMED NITROGEN BEARING",
+      "value": "RN"
+    },
+    {
+      "title": "SA-SILICON FREE-ALUMINIUM KILLED",
+      "value": "SA"
+    }
+  ],
+  "spec_bend_test_info": [
+    {
+      "title": "Y-Information Only Result",
+      "value": "Y"
+    },
+    {
+      "title": "N-Mandatory",
+      "value": "N"
+    }
+  ],
+  "spec_bend_test_direction": [
+    {
+      "title": "L-Longitudinal",
+      "value": "L"
+    },
+    {
+      "title": "T-Transverse",
+      "value": "T"
+    }
+  ],
+  "CEV_Formula": [
+    {
+      "title": "1 = C+MN/6(ROUND TO 2 DEC.PLACES)",
+      "value": "1 = C+MN/6(ROUND TO 2 DEC.PLACES)"
+    },
+    {
+      "title": "2 = C+MN/6 (NOT ROUNDED)",
+      "value": "2 = C+MN/6 (NOT ROUNDED)"
+    },
+    {
+      "title": "3 = C+MN/10",
+      "value": "3 = C+MN/10"
+    },
+    {
+      "title": "4 = FULL FORMULA",
+      "value": "4 = FULL FORMULA"
+    },
+    {
+      "title": "5 = C+MN/6+CR/5 + MO/4",
+      "value": "5 = C+MN/6+CR/5 + MO/4"
+    },
+    {
+      "title": "6 = C+(MN+ SI)/4",
+      "value": "6 = C+(MN+ SI)/4"
+    },
+    {
+      "title": "7 = LLOYDS FORMULA+SI/24",
+      "value": "7 = LLOYDS FORMULA+SI/24"
+    },
+    {
+      "title": "8 = C+ MN/5",
+      "value": "8 = C+ MN/5"
+    },
+    {
+      "title": "9 = C+MN/6+CR+MO+V/5+NI+CU/15",
+      "value": "9 = C+MN/6+CR+MO+V/5+NI+CU/15"
+    }
+  ],
+  "CEV_Location": [
+    {
+      "title": "T-Thickest",
+      "value": "T-Thickest"
+    },
+    {
+      "title": "W-Web",
+      "value": "W-Web"
+    },
+    {
+      "title": "F-Flange",
+      "value": "F-Flange"
+    }
+  ],
+  "PCM_Location": [
+    {
+      "title": "T-Thickest",
+      "value": "T-Thickest"
+    },
+    {
+      "title": "W-Web",
+      "value": "W-Web"
+    },
+    {
+      "title": "F-Flange",
+      "value": "F-Flange"
+    }
+  ],
+  "Remark_Group": [
+    {
+      "title": "group 1",
+      "value": "group 1"
+    },
+    {
+      "title": "group 2",
+      "value": "group 2"
+    },
+    {
+      "title": "group 3",
+      "value": "group 3"
+    },
+    {
+      "title": "group 4",
+      "value": "group 4"
+    },
+    {
+      "title": "group 5",
+      "value": "group 5"
+    },
+    {
+      "title": "group 6",
+      "value": "group 6"
+    },
+    {
+      "title": "group 7",
+      "value": "group 7"
+    },
+    {
+      "title": "group 8",
+      "value": "group 8"
+    },
+    {
+      "title": "group 9",
+      "value": "group 9"
+    }
+  ],
+  "Remark_Type": [
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "B",
+      "value": "B"
+    },
+    {
+      "title": "C",
+      "value": "C"
+    },
+    {
+      "title": "D",
+      "value": "D"
+    },
+    {
+      "title": "E",
+      "value": "E"
+    },
+    {
+      "title": "F",
+      "value": "F"
+    },
+    {
+      "title": "G",
+      "value": "G"
+    },
+    {
+      "title": "H",
+      "value": "H"
+    },
+    {
+      "title": "I",
+      "value": "I"
+    },
+    {
+      "title": "J",
+      "value": "J"
+    },
+    {
+      "title": "K",
+      "value": "K"
+    },
+    {
+      "title": "L",
+      "value": "L"
+    },
+    {
+      "title": "M",
+      "value": "M"
+    },
+    {
+      "title": "N",
+      "value": "N"
+    },
+    {
+      "title": "O",
+      "value": "O"
+    },
+    {
+      "title": "P",
+      "value": "P"
+    },
+    {
+      "title": "Q",
+      "value": "Q"
+    },
+    {
+      "title": "R",
+      "value": "R"
+    },
+    {
+      "title": "S",
+      "value": "S"
+    },
+    {
+      "title": "T",
+      "value": "T"
+    },
+    {
+      "title": "U",
+      "value": "U"
+    },
+    {
+      "title": "V",
+      "value": "V"
+    },
+    {
+      "title": "W",
+      "value": "W"
+    },
+    {
+      "title": "X",
+      "value": "X"
+    },
+    {
+      "title": "Y",
+      "value": "Y"
+    },
+    {
+      "title": "Z",
+      "value": "Z"
+    }
+  ],
+  "spec_location": [
+    {
+      "title": "Flange",
+      "value": "F"
+    },
+    {
+      "title": "Thickest required",
+      "value": "T"
+    }
+  ],
+  "spec_type": [
+    {
+      "title": "Main",
+      "value": "Main"
+    },
+    {
+      "title": "ISS",
+      "value": "ISS"
+    },
+    {
+      "title": "ISB",
+      "value": "ISB"
+    }
+  ],
+  "impact_location": [
+    {
+      "title": "Flange",
+      "value": "Flange"
+    },
+    {
+      "title": "Core",
+      "value": "Core"
+    }
+  ],
+  "impact_orientation": [
+    {
+      "title": "L-Longitudinal",
+      "value": "L"
+    },
+    {
+      "title": "T-Transverse",
+      "value": "T"
+    }
+  ],
+  "impact_i": [
+    {
+      "title": "J-Joules",
+      "value": "J"
+    },
+    {
+      "title": "F-Foot-pounds",
+      "value": "F"
+    }
+  ],
+  "impact_t": [
+    {
+      "title": "C-Celsius",
+      "value": "C"
+    },
+    {
+      "title": "F-Fahrenheit",
+      "value": "F"
+    }
+  ],
+  "other_code": [
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "B",
+      "value": "B"
+    }
+  ],
+  "rework_type": [
+    {
+      "title": "PATCHING",
+      "value": "PATCHING",
+      "children": [
+        {
+          "title": "Lap",
+          "value": "LP"
+        },
+        {
+          "title": "Inspection",
+          "value": "IP"
+        },
+        {
+          "title": "Piece Out",
+          "value": "PO"
+        },
+        {
+          "title": "Pin Wire",
+          "value": "PW"
+        },
+        {
+          "title": "Roll Wear",
+          "value": "RW"
+        },
+        {
+          "title": "Saw Rag",
+          "value": "SR"
+        },
+        {
+          "title": "Under Fill",
+          "value": "UF"
+        }
+      ]
+    },
+    {
+      "title": "STRAIGHTENING",
+      "value": "STRAIGHTENING",
+      "children": [
+        {
+          "title": "Re Cold Straighten",
+          "value": "RCS"
+        },
+        {
+          "title": "Reset",
+          "value": "RS"
+        },
+        {
+          "title": "Run Through",
+          "value": "RT"
+        },
+        {
+          "title": "Half Tolerance",
+          "value": "1/2 BS4"
+        }
+      ]
+    }
+  ],
+  "semi_rework_type": [
+    {
+      "title": "Scarf",
+      "value": "Scarf"
+    }
+  ],
+  "rework_status_filter": [
+    {
+      "title": "",
+      "value": ""
+    },
+    {
+      "title": "Patching",
+      "value": "Patching"
+    },
+    {
+      "title": "Cold Straightening",
+      "value": "Cold Straightening"
+    },
+    {
+      "title": "Complete",
+      "value": "Complete"
+    }
+  ],
+  "semi_rework_status_filter": [
+    {
+      "title": "ALL",
+      "value": ""
+    },
+    {
+      "title": "Scarf",
+      "value": "Scarf"
+    },
+    {
+      "title": "Complete",
+      "value": "Complete"
+    }
+  ],
+  "result_orientation": [
+    {
+      "title": "Longitudinal",
+      "value": "L"
+    },
+    {
+      "title": "Transverse",
+      "value": "T"
+    },
+    {
+      "title": "Core",
+      "value": "C"
+    },
+    {
+      "title": "Through Thickness",
+      "value": "Z"
+    }
+  ],
+  "spec_units": [
+    {
+      "title": "T-Tonnes",
+      "value": "T"
+    },
+    {
+      "title": "K-Kgm per square mm",
+      "value": "K"
+    },
+    {
+      "title": "N-Newtons per square mm (equivalent to MPa)",
+      "value": "N"
+    },
+    {
+      "title": "L-Pounds per square inch (ksi)",
+      "value": "L"
+    },
+    {
+      "title": "H-Hectobars",
+      "value": "H"
+    }
+  ],
+  "allocate_reason": [
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "B",
+      "value": "B"
+    }
+  ],
+  "rolling_status": [
+    {
+      "title": "Open",
+      "value": "Open"
+    },
+    {
+      "title": "Complete",
+      "value": "Complete"
+    },
+    {
+      "title": "Closed",
+      "value": "Closed"
+    },
+    {
+      "title": "Blocked",
+      "value": "Blocked"
+    },
+    {
+      "title": "Trial",
+      "value": "Trial"
+    },
+    {
+      "title": "Bloom",
+      "value": "Bloom"
+    },
+    {
+      "title": "Del",
+      "value": "Del"
+    },
+    {
+      "title": "Trial Del",
+      "value": "Trial Del"
+    },
+    {
+      "title": "Etc",
+      "value": "Etc"
+    },
+    {
+      "title": "GI Blocked",
+      "value": "GI Blocked"
+    },
+    {
+      "title": "del",
+      "value": "del"
+    }
+  ],
+  "elong_guage_code": [
+    {
+      "title": "5.65 ROOT CSA",
+      "value": "5.65 ROOT CSA"
+    },
+    {
+      "title": "200 MM",
+      "value": "200 MM"
+    },
+    {
+      "title": "50 MM",
+      "value": "50 MM"
+    },
+    {
+      "title": "8 IN",
+      "value": "8 IN"
+    },
+    {
+      "title": "2 IN",
+      "value": "2 IN"
+    },
+    {
+      "title": "80 MM",
+      "value": "80 MM"
+    }
+  ],
+  "spec_other_quality_code": [
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "B",
+      "value": "B"
+    }
+  ],
+  "spec_version_status": [
+    {
+      "title": "All",
+      "value": "All"
+    },
+    {
+      "title": "R",
+      "value": "R"
+    },
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "D",
+      "value": "D"
+    }
+  ],
+  "allocation_status": [
+    {
+      "title": "Prime Stock",
+      "value": "allocate"
+    },
+    {
+      "title": "Free Stock",
+      "value": "free_stock"
+    },
+    {
+      "title": "Scrap",
+      "value": "scrap"
+    }
+  ],
+  "test_sample_status": [
+    {
+      "title": "S",
+      "value": "S"
+    },
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "T",
+      "value": "T"
+    },
+    {
+      "title": "R",
+      "value": "R"
+    },
+    {
+      "title": "C",
+      "value": "C"
+    },
+    {
+      "title": "D",
+      "value": "D"
+    }
+  ],
+  "test_sample_reason_code": [
+    {
+      "title": "UG",
+      "value": "UG"
+    },
+    {
+      "title": "TQ",
+      "value": "TQ"
+    },
+    {
+      "title": "RT",
+      "value": "RT"
+    },
+    {
+      "title": "MT",
+      "value": "MT"
+    },
+    {
+      "title": "QM",
+      "value": "QM"
+    },
+    {
+      "title": "PA",
+      "value": "PA"
+    },
+    {
+      "title": "OI",
+      "value": "OI"
+    }
+  ],
+  "test_sample_source": [
+    {
+      "title": "TE13-Allocate",
+      "value": "TE13-Allocate"
+    },
+    {
+      "title": "TD17-Reserve",
+      "value": "TD17-Reserve"
+    },
+    {
+      "title": "TF84-Part-Sawn",
+      "value": "TF84-Part-Sawn"
+    },
+    {
+      "title": "PCC",
+      "value": "PCC"
+    }
+  ],
+  "reserve_status": [
+    {
+      "title": "Reserved",
+      "value": "reserved"
+    }
+  ],
+  "completion_status": [
+    {
+      "title": "All",
+      "value": ""
+    },
+    {
+      "title": "Completed",
+      "value": "completed"
+    },
+    {
+      "title": "Incomplete",
+      "value": "incomplete"
+    }
+  ],
+  "finished_product_history_action": [
+    {
+      "title": "hold",
+      "value": "hold"
+    },
+    {
+      "title": "unhold",
+      "value": "unhold"
+    },
+    {
+      "title": "rework",
+      "value": "rework"
+    },
+    {
+      "title": "rework_complete",
+      "value": "rework_complete"
+    },
+    {
+      "title": "move",
+      "value": "move"
+    },
+    {
+      "title": "create",
+      "value": "create"
+    },
+    {
+      "title": "allocate",
+      "value": "allocate"
+    },
+    {
+      "title": "mult",
+      "value": "mult"
+    },
+    {
+      "title": "mult_complete",
+      "value": "mult_complete"
+    },
+    {
+      "title": "regrade",
+      "value": "regrade"
+    },
+    {
+      "title": "reserve",
+      "value": "reserve"
+    },
+    {
+      "title": "delete",
+      "value": "delete"
+    },
+    {
+      "title": "edit",
+      "value": "edit"
+    },
+    {
+      "title": "return",
+      "value": "return"
+    },
+    {
+      "title": "retrieve",
+      "value": "retrieve"
+    },
+    {
+      "title": "load_tip",
+      "value": "load_tip"
+    },
+    {
+      "title": "load_create",
+      "value": "load_create"
+    },
+    {
+      "title": "advice_tip",
+      "value": "advice_tip"
+    },
+    {
+      "title": "advice_create",
+      "value": "advice_create"
+    }
+  ],
+  "transport_type": [
+    {
+      "title": "A",
+      "value": "A"
+    },
+    {
+      "title": "B",
+      "value": "B"
+    }
+  ],
+  "load_status": [
+    {
+      "title": "All",
+      "value": ""
+    },
+    {
+      "title": "Loaded",
+      "value": "Loaded"
+    },
+    {
+      "title": "Not Loaded",
+      "value": "Not Loaded"
+    }
+  ],
+  "finished_load_status": [
+    {
+      "title": "Tipped",
+      "value": "Tipped"
+    },
+    {
+      "title": "Carry Out",
+      "value": "Carry Out"
+    },
+    {
+      "title": "Created",
+      "value": "Created"
+    }
+  ],
+  "finished_advice_status": [
+    {
+      "title": "All",
+      "value": ""
+    },
+    {
+      "title": "Adviced",
+      "value": "Adviced"
+    },
+    {
+      "title": "Not Adviced",
+      "value": "Not Adviced"
+    }
+  ],
+  "tensile_orientation": [
+    {
+      "title": "L-Longitudinal",
+      "value": "L"
+    },
+    {
+      "title": "T-Transverse",
+      "value": "T"
+    },
+    {
+      "title": "C-Core",
+      "value": "C"
+    },
+    {
+      "title": "Z-Through Thickness",
+      "value": "Z"
+    }
+  ],
+  "business_type_srm": [
+    {
+      "title": "BWS-srm",
+      "value": "BWS"
+    },
+    {
+      "title": "Roster",
+      "value": "Roster"
+    },
+    {
+      "title": "Internal",
+      "value": "Internal"
+    },
+    {
+      "title": "Scrap",
+      "value": "Scrap"
+    },
+    {
+      "title": "Service_Center",
+      "value": "Service_Center"
+    }
+  ],
+  "business_type_skg": [
+    {
+      "title": "BWS-skg",
+      "value": "BWS"
+    },
+    {
+      "title": "Roster",
+      "value": "Roster"
+    },
+    {
+      "title": "Internal",
+      "value": "Internal"
+    },
+    {
+      "title": "Scrap",
+      "value": "Scrap"
+    },
+    {
+      "title": "Service_Center",
+      "value": "Service_Center"
+    }
+  ],
+  "business_type_tbm": [
+    {
+      "title": "BWS-tbm",
+      "value": "BWS"
+    },
+    {
+      "title": "Roster",
+      "value": "Roster"
+    },
+    {
+      "title": "Internal",
+      "value": "Internal"
+    },
+    {
+      "title": "Scrap",
+      "value": "Scrap"
+    },
+    {
+      "title": "Service_Center",
+      "value": "Service_Center"
+    }
+  ],
+  "business_type_srsm": [
+    {
+      "title": "BWS-srsm",
+      "value": "BWS"
+    },
+    {
+      "title": "Roster",
+      "value": "Roster"
+    },
+    {
+      "title": "Internal",
+      "value": "Internal"
+    },
+    {
+      "title": "Scrap",
+      "value": "Scrap"
+    },
+    {
+      "title": "Service_Center",
+      "value": "Service_Center"
+    }
+  ],
+  "advice_business_type": [
+    {
+      "title": "BWS",
+      "value": "BWS"
+    },
+    {
+      "title": "Roster",
+      "value": "Roster"
+    },
+    {
+      "title": "Beam Mill",
+      "value": "Beam Mill"
+    }
+  ],
+  "semi_history_action": [
+    {
+      "title": "move",
+      "value": "move"
+    },
+    {
+      "title": "block",
+      "value": "block"
+    },
+    {
+      "title": "unblock",
+      "value": "unblock"
+    },
+    {
+      "title": "update",
+      "value": "update"
+    },
+    {
+      "title": "delete",
+      "value": "delete"
+    },
+    {
+      "title": "create",
+      "value": "create"
+    },
+    {
+      "title": "rework",
+      "value": "rework"
+    },
+    {
+      "title": "rework_complete",
+      "value": "rework_complete"
+    },
+    {
+      "title": "defect",
+      "value": "defect"
+    }
+  ],
+  "semi_scrap": [
+    {
+      "title": "All",
+      "value": ""
+    },
+    {
+      "title": "Scrapped",
+      "value": "Scrapped"
+    },
+    {
+      "title": "Not Scrapped",
+      "value": "Not Scrapped"
+    }
+  ],
+  "type_of_order": [
+    {
+      "title": "87 Sales Order",
+      "value": "87"
+    },
+    {
+      "title": "274 Planned Order",
+      "value": "274"
+    },
+    {
+      "title": "184 Stock Transfer",
+      "value": "184"
+    }
+  ],
+  "cut_sequence_plan_saw_route":[
+    {
+      "title": "East",
+      "value": "E"
+    },
+    {
+      "title": "West",
+      "value": "W"
+    },
+    {
+      "title": "Secondary",
+      "value": "S"
+    }
+  ],
+  "spec_type_new":[
+    {
+      "title": "Section",
+      "value": "Section"
+    },
+    {
+      "title": "Rail",
+      "value": "Rail"
+    },
+    {
+      "title": "Billet",
+      "value": "Billet"
+    },
+    {
+      "title": "Not Used",
+      "value": "Not Used"
+    }
+  ],
+  "spec_standard":[
+    {
+      "title": "ASTM",
+      "value": "ASTM"
+    },
+    {
+      "title": "BSEN",
+      "value": "BSEN"
+    }
+  ],
+  "advice_status": [
+    {
+      "title": "All",
+      "value": ""
+    },
+    {
+      "title": "EnRoute",
+      "value": "EnRoute"
+    },
+    {
+      "title": "Tipped",
+      "value": "Tipped"
+    },
+    {
+      "title": "Cancelled",
+      "value": "Cancelled"
+    },
+    {
+      "title": "Unload",
+      "value": "Unload"
+    },
+    {
+      "title": "Deload",
+      "value": "Deload"
+    }
+  ],
+  "advice_held": [
+    {
+      "title": "All",
+      "value": ""
+    },
+    {
+      "title": "Q",
+      "value": "Q"
+    }
+  ],
+  "own_state": [
+    {
+      "title": "store",
+      "value": "store"
+    },
+    {
+      "title": "mill",
+      "value": "mill"
+    }
+  ],
+  "transport_history_action": [
+    {
+      "title": "create",
+      "value": "create"
+    },
+    {
+      "title": "onload",
+      "value": "onload"
+    },
+    {
+      "title": "deload",
+      "value": "deload"
+    },
+    {
+      "title": "edit",
+      "value": "edit"
+    },
+    {
+      "title": "delete",
+      "value": "delete"
+    }
+  ],
+  "archieved_status": [
+    {
+      "title": "Archieved",
+      "value": "Archieved"
+    },
+    {
+      "title": "Current",
+      "value": "Current"
+    }
+  ],
+  "area_type": [
+    {
+      "title": "s-semi",
+      "value": "s-semi"
+    },
+    {
+      "title": "f-finished_product",
+      "value": "f-finished_product"
+    }
+  ],
+  "free_stock_status": [{
+    "title": "BT-BULGED TOES",
+    "value": "BT-BULGED TOES"
+  }, {
+    "title": "BW-BUCKLED",
+    "value": "BW-BUCKLED"
+  }, {
+    "title": "CE-COLD CUTTING ERROR",
+    "value": "CE-COLD CUTTING ERROR"
+  }, {
+    "title": "CO-COBBLE",
+    "value": "CO-COBBLE"
+  }, {
+    "title": "CR-CRACKING",
+    "value": "CR-CRACKING"
+  }, {
+    "title": "CS-CUT SHORT",
+    "value": "CS-CUT SHORT"
+  }, {
+    "title": "DI-DISHED WEB",
+    "value": "DI-DISHED WEB"
+  }, {
+    "title": "DP-DIPPED ENDS",
+    "value": "DP-DIPPED ENDS"
+  }, {
+    "title": "DS-DELAYED AT SAWS",
+    "value": "DS-DELAYED AT SAWS"
+  }, {
+    "title": "EK-END KINK",
+    "value": "EK-END KINK"
+  }, {
+    "title": "EX-EXCESS LENGTH",
+    "value": "EX-EXCESS LENGTH"
+  }, {
+    "title": "FD-FORKLIFT DAMAGE",
+    "value": "FD-FORKLIFT DAMAGE"
+  }, {
+    "title": "FQ-FAILED QUALITY",
+    "value": "FQ-FAILED QUALITY"
+  }, {
+    "title": "FS-FRONT END SCRAP",
+    "value": "FS-FRONT END SCRAP"
+  }, {
+    "title": "GD-GAG PRESS DAMAGE",
+    "value": "GD-GAG PRESS DAMAGE"
+  }, {
+    "title": "GM-GUIDE MARK",
+    "value": "GM-GUIDE MARK"
+  }, {
+    "title": "HK-HOOKED",
+    "value": "HK-HOOKED"
+  }, {
+    "title": "KK-MIDDLE KINK",
+    "value": "KK-MIDDLE KINK"
+  }, {
+    "title": "LC-LAST CUT ERROR",
+    "value": "LC-LAST CUT ERROR"
+  }],
+  "advice_type":[
+    {
+      "title":"Transfer",
+      "value":"Transfer"
+    },
+    {
+      "title":"Scrap",
+      "value":"Scrap"
+    },
+    {
+      "title":"Mult",
+      "value":"Mult"
+    },
+    {
+      "title":"Rework",
+      "value":"Rework"
+    }
+    
+  ],
+  "spec_text_type": [
+    {
+      "title": "G",
+      "value": "G"
+    },
+    {
+      "title": "S",
+      "value": "S"
+    }
+  ],
+  "finished_product_status": [
+    {
+      "title": "created",
+      "value": "created"
+    },
+    {
+      "title": "despatched",
+      "value": "despatched"
+    },
+    {
+      "title": "archived",
+      "value": "archived"
+    },
+    {
+      "title": "returned",
+      "value": "returned"
+    }
+  ],
+  "test_status": [
+    {
+      "value": "A",
+      "title": "Waiting"
+    },
+    {
+      "value": "T",
+      "title": "Tested"
+    },
+    {
+      "value": "RT",
+      "title": "Retested"
+    },
+    {
+      "value": "U",
+      "title": "Updated"
+    }
+  ]
+}

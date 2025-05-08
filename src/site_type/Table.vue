@@ -1,0 +1,198 @@
+<template>
+  <v-container class="page" fluid>
+    <new-edit-sheet />
+    <delete-dialog />
+    <v-form ref="searchForm" @submit.prevent="handleSearch">
+      <v-row align="center">
+        <v-col cols="3">
+          <v-text-field
+              v-model="table.options.q"
+              label="Search By Code"
+              variant="underlined"
+              bg-color="white"
+              hide-details
+              clearable
+          ></v-text-field>
+        </v-col>
+        <v-col cols="3">
+          <div class="d-flex ga-4 align-center">
+            <v-btn
+                class="text-none"
+                color="#e3e3e3"
+                variant="flat"
+                @click="handleReset"
+            >
+              {{ $t('global.reset') }}
+            </v-btn>
+            <v-btn
+                type="submit"
+                class="text-none"
+                color="primary"
+                variant="flat"
+                v-permission="`Search`"
+            >
+            {{ $t('global.search') }}
+          </v-btn>
+          </div>
+        </v-col>
+        <v-col cols="6" class="text-end">
+          <v-btn
+              color="primary"
+              variant="flat"
+              @click="editShow(null)"
+              :disabled="localOrganizationStatus === 'Expired'"
+              v-permission="`Create`"
+          >{{ $t('global.new') }}</v-btn
+          >
+        </v-col>
+      </v-row>
+    </v-form>
+    <v-card class="mt-6 pa-4" elevation="0" variant="outlined">
+      <v-data-table-server
+          fixed-header
+          height="650"
+          show-current-page
+          :headers="headers"
+          :items="table.rows.items"
+          :items-length="table.rows.total || 0"
+          v-model:page="table.options.page"
+          v-model:items-per-page="table.options.itemsPerPage"
+          v-model:sort-by="table.options.sortBy"
+          v-model:sort-desc="table.options.descending"
+          :footer-props="{
+            'items-per-page-options': [5, 10, 20],
+          }"
+          :loading="table.loading"
+          loading-text="Loading... Please wait"
+      >
+        <template v-slot:[`item.action`]="{ item }">
+            <span class="table_action_icon">
+              <v-icon small class="mr-2" @click="editShow(item)" v-permission="`Detail`"
+              >mdi-pencil</v-icon
+              >
+              <v-icon small @click="removeShow(item)" v-permission="`Delete`">mdi-delete</v-icon>
+            </span>
+        </template>
+      </v-data-table-server>
+    </v-card>
+  </v-container>
+</template>
+
+<script>
+// import { mapGetters } from "vuex";
+// import { mapFields } from "vuex-map-fields";
+// import { mapActions, mapState } from "vuex";
+import DeleteDialog from "@/site_type/DeleteDialog.vue";
+
+import NewEditSheet from "@/site_type/NewEditSheet.vue";
+import { mapState } from "pinia";
+import { mapActions } from "pinia";
+
+import { useSiteTypeStore } from "./storePinia";
+
+export default {
+  name: "SiteTypeTable",
+
+  components: {
+    NewEditSheet,
+    DeleteDialog,
+  },
+  data() {
+    return {
+      localOrganizationStatus: localStorage.getItem("organizationStatus"), // organizationStatus取的是本地缓存的数据
+    };
+  },
+
+  computed: {
+    ...mapState("auth", ["userInfo"]),
+    ...mapState(useSiteTypeStore, ["table"]),
+    headers() {
+      return [
+        {
+          title: this.$t("global.action"),
+          value: "action",
+          sortable: false,
+          align: "center",
+          fixed: true
+        },
+        { title: this.$t('site_type.table.code'), value: "code", sortable: true },
+        { title: this.$t('site_type.table.mill_code'), value: "mill_code", sortable: true },
+        { title: this.$t('site_type.table.name'), value: "name", sortable: true },
+        { title: this.$t('site_type.table.bussiness_type'), value: "business_type", sortable: true },
+        { title: this.$t('site_type.table.description'), value: "desc", sortable: true },
+        { title: this.$t('site_type.table.latitude'), value: "latitude", sortable: true },
+        { title: this.$t('site_type.table.longitude'), value: "longitude", sortable: true },
+      ]
+    }
+  },
+
+  mounted() {
+    this.getAll({});
+
+    this.$watch(
+      (vm) => [vm.page],
+      () => {
+        this.getAll();
+      }
+    );
+
+    this.$watch(
+      (vm) => [
+        vm.table.options.q,
+        vm.table.options.page,
+        vm.table.options.itemsPerPage,
+        vm.table.options.sortBy,
+        vm.table.options.descending,
+      ],
+      () => {
+        this.getAll();
+      }
+    );
+  },
+  destroyed() {
+    this.closeCreateEdit();
+  },
+  methods: {
+    ...mapActions(useSiteTypeStore, [
+      "getAll",
+      // "createEditShow",
+      "removeShow",
+      "editShow",
+    ]),
+    handleSearch() {
+      this.getAll();
+    },
+    handleReset() {
+      this.$refs["searchForm"].reset();
+      handleSearch();
+    },
+    // ...mapGetters("auth", ["getPermission"]),
+    // ...mapActions("location", [
+    //   "getAll",
+    //   "createEditShow",
+    //   "removeShow",
+    //   "closeCreateEdit",
+    // ]),
+    // ...mapActions("job", ["showJobEdit4Customer"]),
+    // clickNewJobOnLocation(item) {
+    //   this.showJobEdit4Customer({ job: null, loc: item });
+    // },
+  },
+};
+</script>
+<style>
+.code {
+  display: block;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.overflow_ellipsis_col {
+  display: block;
+  max-width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style>

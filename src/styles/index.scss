@@ -1,0 +1,143 @@
+html {
+  overflow-y: hidden;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+[style*="pointer-events: none"] {
+  cursor: not-allowed !important;
+  filter: grayscale(0.8);
+}
+
+.v-card--variant-outlined {
+  border-color: rgb(210, 210, 210);
+}
+
+.dispatch-side-card {
+  backdrop-filter: blur(12px) saturate(190%) contrast(50%) brightness(130%) !important;
+  border: 0.5px solid rgb(216, 216, 216) !important;
+  border-radius: 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px !important;
+  color: rgb(60, 65, 73) !important;
+  opacity: 2 !important;
+}
+
+.v-data-table__td {
+  padding: 0 10px !important;
+}
+
+.v-data-table-column--no-padding {
+  padding: 0 !important;
+}
+
+.dispatch-text-paragraph {
+  font-size: 0.75rem !important;
+}
+
+.dispatch-text-subtitle {
+  font-size: 0.8125rem !important;
+  font-weight: 500 !important;
+  color: rgb(60, 65, 73) !important;
+}
+
+.dispatch-text-title {
+  font-size: 13px !important;
+}
+
+.dispatch-button {
+  text-transform: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0px !important;
+  font-weight: 500px !important;
+  line-height: normal !important;
+  transition-property: border, background-color, color, opacity !important;
+  transition-duration: 0.15s !important;
+  user-select: none !important;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 4px !important;
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(223, 225, 228) !important;
+  border-radius: 4px !important;
+  color: rgb(60, 65, 73) !important;
+  min-width: 28px !important;
+  height: 28px !important;
+  padding: 0px 14px !important;
+  font-size: 0.75rem !important;
+}
+
+.v-theme--light{
+    .formkit-input {
+        --fk-color-input: rgb(0,0,0);;
+    }
+    .formkit-help {
+        --fk-color-help: rgb(0,0,0);
+    }
+}
+
+.v-theme--dark{
+    .formkit-input {
+        --fk-color-input: rgb(255,255,255);;
+    }
+    .formkit-help {
+        --fk-color-help: rgb(255,255,255);;
+    }
+}
+
+
+.v-field--disabled {
+  opacity: .85 !important;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+// 全局弹出框Dialog Form
+.form-dialog {
+  z-index: 1111 !important;
+}
+.form-dialog+.v-navigation-drawer__scrim {
+  position: fixed;
+  z-index: 1110 !important;
+  overscroll-behavior: none;
+  pointer-events: none;
+}
+
+// 全局table表格自定义列
+.v-table {
+  position: relative;
+}
+.table-action {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--v-table-header-height);
+  padding: 0 10px;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+// 移除el-input的control模块
+.no-input-control {
+  .v-field__append-inner {
+    display: none;
+  }
+}
+
+@media print {
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
